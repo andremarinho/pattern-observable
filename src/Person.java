@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Person implements Observer {
     private String nome;
@@ -7,7 +8,7 @@ public class Person implements Observer {
         this.nome = nome;
     }
 
-    public void checkMail(ArrayList<Mail> listMail){
+    public void checkMail(List<Mail> listMail){
         for (Mail mail: listMail){
             if (nome.compareTo(mail.receiverName()) == 0){
                 System.out.println(nome+ ": "+mail.content());
@@ -19,7 +20,7 @@ public class Person implements Observer {
     public void update(Object obj) {
         if (obj instanceof PostOffice ){
            PostOffice pos = (PostOffice) obj;
-           checkMail(po.state());
+           checkMail(pos.getState());
         }
     }
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class PostOffice implements Subject {
 
@@ -11,8 +12,13 @@ public class PostOffice implements Subject {
     }
 
     public void addMail(Mail mail){
+        System.out.println("Add e-mail on PostOffice");
         this.allMail.add(mail);
         notifySub();
+    }
+
+    public List<Mail> getState(){
+        return this.allMail;
     }
 
     @Override
@@ -27,6 +33,7 @@ public class PostOffice implements Subject {
 
     @Override
     public void notifySub() {
+        System.out.println("Notify all observers");
         for (Observer o: observers){
             o.update(this);
         }

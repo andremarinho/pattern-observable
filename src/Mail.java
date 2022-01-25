@@ -4,7 +4,8 @@ public class Mail {
     private String content;
 
     public Mail(String name, String subject, String content){
-
+        this.name = name;
+        this.content = content;
     }
 
     public String receiverName(){
