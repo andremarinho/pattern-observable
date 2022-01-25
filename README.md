@@ -4,6 +4,6 @@
 
 This project aims to demonstrate the operation of the observable design pattern. Basead on video 
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=ojbT9WA70Fw/0.jpg)](https://www.youtube.com/watch?v=ojbT9WA70Fw)
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=ojbT9WA70Fw>/default.jpg)](https://www.youtube.com/watch?v=ojbT9WA70Fw)
 
 <img src="postoffice.PNG" alt="observable pattern">
